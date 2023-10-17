@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div id="main-content">
+      <nav id="questions-nav">
+        <img
+          src="./assets/epicode_logo.png"
+          style="width: 170px"
+          alt="logo epicode"
+        />
+        <div id="countdown">
+          <div id="timer" class="timer">TIMER</div>
+          <svg>
+            <circle id="circle" r="60" cx="70" cy="70"></circle>
+            <circle id="circle-below" r="60" cx="70" cy="70"></circle>
+          </svg>
+        </div>
+      </nav>
+      <div class="content" id="box-domanda">
+        <h1 id="question">
+          What is the most preferred image format used for logos in the
+          Wikimedia database?
+        </h1>
+        <div id="buttons">
+          <button type="button" class="answer-button">.svg</button>
+          <button type="button" class="answer-button">.png</button>
+          <button type="button" class="answer-button">.jpeg</button>
+          <button type="button" class="answer-button">.gif</button>
+        </div>
+      </div>
+      <footer>
+        <h3 id="question-number">
+          QUESTION <span id="counter">1</span
+          ><span id="question-span"> / 10</span>
+        </h3>
+        <button type="button" id="next-question-button">NEXT →</button>
+      </footer>
+    </div>
+
+    <script src="./questions.js"></script>
+  </body>
+</html>
